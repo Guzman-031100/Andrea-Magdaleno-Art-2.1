@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/jpg" href="img/Andrea icon.jpg">
+    <title>Creative Services | My Site</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+    <header>
+        <h1>Andrea Magdaleno Art 2.1</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="mural.html">Hometown Mural</a>
+        <a href="services.html" class="active">Creative Services</a>
+        <div class="dropdown">
+            <button class="dropbtn"> More</button>
+            <div class="content">
+                <a href="illustrations.html">Children's Illustrations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="service">
+        <h2>Creative services I provide</h2>
+        <div class="service-item">
+            <h3>01.</h3>
+            <p>Murals</p>
+        </div>
+        <div class="service-item">
+            <h3>02.</h3>
+            <p>Invitations, Greeting Cards, <br>
+                Gift Tags</p>
+        </div>
+        <div class="service-item">
+            <h3>03.</h3>
+            <p>Digital Prints</p>
+        </div>
+        <div class="service-item">
+            <h3>04.</h3>
+            <p>Painting commission</p>
+        </div>
+    </div>
+
+    <div id="Inspired">
+        <h4>Get Inspired</h4>
+        <p>There's be no better way to communicate what I do than through images. As <br>
+            you browse my site, take a few moments to let your eyes linger here to get <br>
+            inspired for a service that I can provide. Contact me to get a free estimate!</p>
+    </div>
+
+    <div class="container">
+        <div class="gallery">
+
+            <!-- Row 1-->
+            <div class="row">
+                <img id="image0" src="services/christmas.jpeg">
+                <img id="image1" src="services/san luis.jpeg">
+            </div>
+            <!-- Row 2-->
+            <div class="row">
+                <img id="image2" src="services/mexico.jpeg">
+                <img id="image3" src="services/library.jpeg">
+                <img id="image4" src="services/gracias.jpeg">
+            </div>
+            <!-- Row 3-->                    
+            <div class="row">
+                <img id="image5" src="services/abundance.jpeg">
+                <img id="image6" src="services/Elleanie.jpeg">
+                <img id="image7" src="services/raffle.jpeg">
+            </div>
+            <!-- Row 4-->
+            <div class="row">
+                <img id="image8" src="services/decorations.jpeg">
+                <img id="image9" src="services/baby.jpeg">
+                <img id="image10" src="services/bear.jpeg">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <small>© 2024 Andrea Magdaleno. All rights reserved.</small>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <span class="prev-arrow" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-image" class="lightbox-content">
+        <span class="next-arrow" onclick="changeImage(1)">&#10095;</span>
+        <button class="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button>
+    </div>    
+
+    <script src="lightbox.js"></script> <!-- New: External JavaScript file -->
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/jpg" href="img/Andrea icon.jpg">
+    <title>Hometown Mural | My Site</title>
+    <link rel="stylesheet" href="mural.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+    <header>
+        <h1>Andrea Magdaleno Art 2.1</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="mural.html" class="active">Hometown Mural</a>
+        <a href="services.html">Creative Services</a>
+        <div class="dropdown">
+            <button class="dropbtn"> More</button>
+            <div class="content">
+                <a href="illustrations.html">Children's Illustrations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="Library">
+        <h2>Hometown Public Library</h2>
+        <p>This mural was a volunteer opportunity to showcase my skills as an artist and to <br>
+            give back to my community. This project gave me the chance to get to know the <br>
+            people of Hometown and to work alongside Hometown Public Library. <br>
+            Throughout the process of making, there were challenges that I was faced with <br>
+            as an artist. It was also an opportunity to have fun and meet new people!</p>
+    </div>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="mural/library 0.jpeg">
+            <img src="mural/library 1.jpeg">
+            <img src="mural/library 2.jpeg">
+            <img src="mural/library 3.jpeg">
+            <img src="mural/library 4.jpeg">
+            <img src="mural/library 5.jpeg">
+            <img src="mural/library 6.jpeg">
+            <img src="mural/library 7.jpeg">
+            <img src="mural/library 8.jpeg">
+        </div>
+    </div>
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <span class="prev-arrow" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-image" class="lightbox-content">
+        <span class="next-arrow" onclick="changeImage(1)">&#10095;</span>
+        <button class="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button>
+    </div>  
+
+    <footer>
+        <hr>
+        <small>© 2024 Andrea Magdaleno. All rights reserved.</small>
+    </footer>
+
+    <script src="mural.js"></script>
+    <script src="lightbox.js"></script>
+
+</body>
+
+</html>

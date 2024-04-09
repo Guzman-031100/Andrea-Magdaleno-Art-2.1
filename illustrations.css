@@ -1,0 +1,139 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.container{
+    margin-top: 76px;
+    margin-left: 24px;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+
+/*row1*/
+#image1{
+    width: 542px;
+    height: 355px;
+}
+#image2{
+    width: 424px;
+    height: 211px; 
+}
+#image3{
+    width: 315px;
+    height: 211px;
+}
+
+/*row2*/
+#image4{
+    width: 352px;
+    height: 233px;
+}
+#image5{
+    width: 176px;
+    height: 233px;
+}
+#image6{
+    width: 754px;
+    height: 377px;
+    margin-top: -144px;
+}
+
+/*row3*/
+#image7{
+    width: 584px;
+    height: 388px;
+}
+#image8{
+    width: 710px;
+    height: 919px;
+}
+
+/*row4*/
+#image9{
+    width: 232px;
+    height: 521px;
+}
+#image0{
+    width: 342px;
+    height: 521px;
+}
+#image9, #image0{
+    margin-top: -532px;
+}
+
+.row img {
+    margin-right: 12px;
+    margin-bottom: 12px; 
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    opacity: 0;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    text-align: left;
+    margin-bottom: .1px; 
+}
+
+.row img:last-child {
+    margin-right: 0;
+}
+
+.lightbox-content {
+    max-width: 50%; 
+    max-height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#lightbox-description {
+    color: white;
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.description {
+    position: absolute;
+    font-size: 20px;
+    inset: 90px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-container:hover img {
+    filter: brightness(30%);
+    transition: filter 0.5s ease-in;
+}
+
+.image-container:hover .description {
+    opacity: 1;
+}

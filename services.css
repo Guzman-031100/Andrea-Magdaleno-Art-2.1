@@ -1,0 +1,130 @@
+h2{
+    font-size: 56px;
+}
+
+#service {
+    white-space: nowrap; 
+    padding-left: 50px;
+    padding-top: 40px;
+}
+
+.service-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 90px; 
+    padding-right: 90px; 
+}
+
+.service-item:last-child {
+    margin-right: 0; 
+    padding-right: 0;
+}
+
+.service-item h3 {
+    color: rgb(200, 212, 99);
+    font-size: 38px;
+    display: block;
+    margin: 0; 
+}
+
+.service-item p {
+    font-size: 22px;
+    margin: 0; 
+    color: rgb(133, 141, 66);
+    border-bottom: 1px solid black; 
+    padding-bottom: 5px; 
+}
+
+h4{
+    font-family: 'Folk';
+    font-size: 56px;
+    text-align: center;
+    color:rgb(226, 105, 70);
+    margin-bottom: 10px; 
+}
+
+#Inspired{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(133, 141, 66);
+}
+
+.container{
+    padding-left: 74px;
+}
+
+
+/*row1*/
+#image0{
+    width: 550px;
+    height: 393px;
+}
+#image1{
+    width: 655px;
+    height: 393px;
+}
+
+
+/*row2*/
+#image2{
+    width: 220px;
+    height: 300px;
+}
+#image3{
+    width: 410px;
+    height: 300px;
+}
+#image4{
+    width: 555px;
+    height: 300px;
+}
+
+
+/*row3*/
+#image5{
+    width: 500px;
+    height: 350px;
+}
+#image6{
+    width: 208px;
+    height: 350px;
+}
+#image7{
+    width: 478px;
+    height: 350px;
+}
+
+
+/*row4*/
+#image8{
+    width: 588px;
+    height: 487px;
+}
+#image9{
+    width: 235px;
+    height: 487px;
+}
+#image10{
+    width: 363px;
+    height: 487px;
+}
+
+
+.row {
+    margin: 20px -20px;
+}
+
+.row img {
+    margin: 0 20px 20px 0;
+}
+
+.gallery img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(0.99);
+    filter: brightness(0.8);
+}

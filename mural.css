@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Folk';
+    src: url(fonts/folks/Folks-Bold.ttf);
+}
+
+#Library{
+    font-family: 'Folk';
+    margin-top: 130px;
+    margin-left: 200px;
+    line-height: 2;
+}
+
+h2{
+    font-size: 56px;
+    color: rgb(226, 105, 70);
+}
+
+p{
+    color: rgb(133, 141, 66);
+}
+
+#image0 {
+    width: 230px;
+    height: 405px;
+}
+
+#image1 {
+    width: 720px;
+    height: 405px;
+}
+
+#image2 {
+    width: 540px;
+    height: 405px;
+}
+
+#image3 {
+    width: 720px;
+    height: 405px;
+}
+
+#image4 {
+    width: 720px;
+    height: 405px;
+}
+
+#image5 {
+    width: 720px;
+    height: 405px;
+}
+
+#image6 {
+    width: 720px;
+    height: 405px;
+}
+
+#image7 {
+    width: 540px;
+    height: 405px;
+}
+
+#image8 {
+    width: 720px;
+    height: 405px;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: auto; 
+}
+
+.gallery {
+    display: flex;
+    gap: 10px; 
+    transition: transform 0.5s ease; 
+}
+
+.gallery img {
+    flex: 0 0 auto;
+    height: 405px;
+    object-fit: cover;
+}    
+
+.button-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px; 
+    box-sizing: border-box;
+    z-index: 1; 
+}
+
+.button-wrapper button {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 20px; 
+    font-size: 24px; 
+    cursor: pointer;
+}
+
+#prevBtn {
+    position: fixed;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    display: none; 
+    z-index: 10000;
+}
+
+#nextBtn {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 10000;
+}

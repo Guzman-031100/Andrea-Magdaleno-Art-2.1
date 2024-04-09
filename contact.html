@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/jpg" href="img/Andrea icon.jpg">
+    <title>Contact | Andrea Magdaleno </title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="general.css">
+    <script src="https://kit.fontawesome.com/c70fb56252.js" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Andrea Magdaleno Art 2.1</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="mural.html">Hometown Mural</a>
+        <a href="services.html">Creative Services</a>
+        <div class="dropdown">
+            <button class="dropbtn"> More</button>
+            <div class="content">
+                <a href="illustrations.html">Children's Illustrations</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <aside class="aside">
+            <h5 class="transition">Let's Chat!</h5>
+            <h3>Send Andrea an <br>
+                email with your <br>
+                message to get in <br>
+                touch!</h3>
+            <i class="fa-solid fa-paper-plane fa-10x" style="color: #e2dfec;"></i><br>
+            <a class="insta" href="https://www.instagram.com/andreamagdalenoart/" target="_blank">
+                <i class="fa-brands fa-instagram fa-3x"></i>
+            </a>
+        </aside>
+ 
+        <section class="section">
+            <form id="contact" action="" method="POST">
+
+                <label for="reason">Reason for Contact</label><br>
+                <select id="reason" name="reason">
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="Mural">Mural,Large Scale Wall Paintings</option>
+                    <option value="Invitations">Gift Cards, GiftTags, Invitations</option>
+                    <option value="Commission">Painting Commission</option>
+                    <option value="Prints">Digital and Prints</option>
+                </select><br>
+
+                <div class="name-fields">
+                    <div class="name-field">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" minlength="2" pattern="[A-Za-z]+" required>
+                    </div>
+
+                    <div class="name-field">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" minlength="2" pattern="[A-Za-z]+" required>
+                    </div>
+                </div>
+                
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required><br>
+                <label for="message">Message</label><br>
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10"
+                    required></textarea><br>
+                <br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <hr>
+        <small>© 2024 Andrea Magdaleno. All rights reserved.</small>
+    </footer>
+
+</body>
+
+</html>

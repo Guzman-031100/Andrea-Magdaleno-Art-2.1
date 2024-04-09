@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/jpg" href="img/Andrea icon.jpg">
+    <title>Children illustrations | Andrea Magdaleno</title>
+    <link rel="stylesheet" href="illustrations.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Andrea Magdaleno Art 2.1</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="mural.html">Hometown Mural</a>
+        <a href="services.html">Creative Services</a>
+        <div class="dropdown">
+            <button class="dropbtn"> More</button>
+            <div class="content">
+                <a href="illustrations.html" class="active">Children's Illustrations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="gallery">
+
+            <!-- Row 1-->
+            <div class="row">
+                <div class="image-container">
+                    <img id="image1" src="Illustraition2/St Patricks Day 2023.jpeg"
+                        data-description="St. Patrick's Day 2023">
+                    <div class="description">St. Patrick's Day 2023</div>
+                </div>
+                <div class="image-container">
+                    <img id="image2" src="Illustraition2/World Animals.jpeg" data-description="Animals of The World">
+                    <div class="description">Animals of The World</div>
+                </div>
+                <div class="image-container">
+                    <img id="image3" src="Illustraition2/April Showering.jpeg" data-description="April Showers">
+                    <div class="description">April Showers</div>
+                </div>
+            </div>
+
+            <!-- Row 2-->
+            <div class="row">
+                <div class="image-container">
+                    <img id="image4" src="Illustraition2/In Chicago.jpeg" data-description="Children's Day in Chicago">
+                    <div class="description">Children's Day in Chicago</div>
+                </div>
+                <div class="image-container">
+                    <img id="image5" src="Illustraition2/See America.jpeg"
+                        data-description="See America Delaware Water Gap">
+                    <div class="description">"See America"</div>
+                </div>
+                    <img id="image6" src="Illustraition2/pelican.jpeg" data-description="Animals of The World">
+            </div>
+
+            <!-- Row 3-->
+            <div class="row">
+                <div class="image-container">
+                    <img id="image7" src="Illustraition2/San Luis.jpeg"
+                        data-description="Ninos en San Luis Potosi, Mexico">
+                    <div class="description">Ninos en San Luis Potosi, Mexico</div>
+                </div>
+                <div class="image-container">
+                    <img id="image8" src="Illustraition2/Talking Turkeys.jpeg" data-description="Talking Turkeys">
+                    <div class="description">"Talking Turkeys"</div>
+                </div>
+            </div>
+
+            <!-- Row 4-->
+            <div class="row">
+                <img id="image9" src="Illustraition2/Girl Scout.jpeg" data-description="Girl Scout Adventures">
+                <img id="image0" src="Illustraition2/Imagination.jpeg" data-description="Open Books Open Imagination">
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <span class="prev-arrow" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-image" class="lightbox-content">
+        <p id="lightbox-description"></p>
+        <span class="next-arrow" onclick="changeImage(1)">&#10095;</span>
+        <button class="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button>
+    </div>
+
+    <footer>
+        <hr>
+        <small>© 2024 Andrea Magdaleno. All rights reserved.</small>
+    </footer>
+    
+    <script src="lightbox.js"></script>
+    <script src="illustration.js"></script>
+
+</body>
+
+</html>
